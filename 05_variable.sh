@@ -1,7 +1,7 @@
 echo "Enter your name: : "
-read $Name
+read $name
 
 echo "Enter your password: : "
-read $Password 
+read $password 
 
-echo "User Name is $Name and Password is $Password"
+echo "User Name is: $name and Password is: $password"
