@@ -4,7 +4,7 @@
 
 start_time=$(date +%s)
 echo "Start time of the script $start_time"
-sleep 10  #sleep 10 & means sleep running in background otherwise fourground
+sleep 10 &  #sleep 10 & means sleep running in background otherwise fourground
 
 end_time=$(date +%s)
 echo "End time of the script $end_time"
