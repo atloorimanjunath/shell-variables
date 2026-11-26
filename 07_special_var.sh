@@ -12,4 +12,5 @@ echo "home directory of the current user: $HOME"
 echo "PID of the current script: $$"
 sleep 10 &
 echo "background PID now: $!"
+wait $! #script waits until $! command complete
 echo "line number: $LINENO"
