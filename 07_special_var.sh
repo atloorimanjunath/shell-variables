@@ -9,3 +9,7 @@ echo "script realpath $(realpath $0)"
 echo "directory of the shell script: $PWD"
 echo "who is running current script: $USER"
 echo "home directory of the current user: $HOME"
+echo "PID of the current script: $$"
+sleep 10 &
+echo "background PID now: $!"
+echo "line number: $LINENO"
