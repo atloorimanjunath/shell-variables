@@ -4,3 +4,9 @@ a=10
 b=20
 
 echo "The total value is $(($a+$b))"
+
+declar -i total_banana=50
+declar -i total_apple=70
+
+total_price=$total_banana+$total_apple
+echo $total_price
