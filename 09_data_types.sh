@@ -16,5 +16,5 @@ total=total+5
 echo $total
 
 my_arry=("AWS" "DEVOPS" "AIOPS")
-echo $my_arry
+echo $my_arry[@]
 
