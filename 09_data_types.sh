@@ -8,5 +8,5 @@ echo "The total value is $(($a+$b))"
 declare -i total_banana=50
 declare -i total_apple=70
 
-total_price=$total_banana+$total_apple
+declare -i total_price=$total_banana+$total_apple
 echo $total_price
