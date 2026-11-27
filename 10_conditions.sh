@@ -1,5 +1,6 @@
 #!/bin/bash
-marks=14
+echo "Enter your marks: "
+read marks
 
 if [ $marks -lt 35 ]; then
 echo "Student fail"
