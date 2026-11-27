@@ -15,6 +15,6 @@ declare -i total=10
 total=total+5
 echo $total
 
-my_arry=("AWS","DEVOPS","AIOPS")
-echo "All fruits: $my_arry[@]"
+my_arry=("AWS" "DEVOPS" "AIOPS")
+echo "All fruits: ${my_arry[@]}"
 
