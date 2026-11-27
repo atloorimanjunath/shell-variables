@@ -12,5 +12,5 @@ declare -i total_price=$total_banana+$total_apple
 echo $total_price
 
 declare -i total=10
-total=total+5
-echo $total
+final=total+5
+echo $final
