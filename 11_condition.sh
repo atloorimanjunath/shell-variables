@@ -17,7 +17,11 @@ else
 echo "nginx is instalation succesfully"
 fi
 
-systemctl restart nginx
-systemctl enable nginx
-systemctl start nginx
-systemctl status nginx
+
+dnf install mysql -y
+
+if [ $? -ne 0 ]; then
+echo "mysql instalation is worng please check"
+else 
+echo "mysql is instalation succesfully"
+fi
