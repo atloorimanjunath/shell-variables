@@ -17,3 +17,7 @@ else
 echo "nginx is instalation succesfully"
 fi
 
+systemctl restart nginx
+systemctl enable nginx
+systemctl start nginx
+systemctl status nginx
