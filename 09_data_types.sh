@@ -19,4 +19,4 @@ my_arry=("AWS" "DEVOPS" "AIOPS")
 echo "All fruits: ${my_arry[@]}"
 
 name=Manju
-echo "$namenath"
+echo "${name}nath"
