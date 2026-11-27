@@ -2,7 +2,7 @@
 
 userId=$(id -u)
 
-if [ ${userId} -nq 0 ]; then
+if [ ${userId} -ne 0 ]; then
 echo "Please take sudo access"
 fi
 
