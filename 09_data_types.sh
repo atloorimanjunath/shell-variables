@@ -14,3 +14,7 @@ echo $total_price
 declare -i total=10
 total=total+5
 echo $total
+
+my_arry=("AWS" "DEVOPS" "AIOPS")
+echo $my_arry
+
