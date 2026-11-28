@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Script Starting time: $(date +"%Y-%m-%d %H:%M:%S")" &>> $log_file
-
 log_floder="/var/log/shell-variables"
 log_file="${log_floder}/${0}.log"
 
@@ -15,6 +13,8 @@ else
 fi 
 
 mkdir -p $log_floder
+
+echo "Script Starting time: $(date +"%Y-%m-%d %H:%M:%S")" &>> $log_file
 
 validation(){
     if [ ${1} -ne 0 ]; then
