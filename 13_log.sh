@@ -8,9 +8,9 @@ log_file="${log_floder}/${0}.log"
 userId=$(id -u)
 
 if [ $userId -eq 0 ]; then
-    echo "You are sudo user" &>> log_file
+    echo "You are sudo user" | tee -a log_file
 else
-    echo "Please take sudo access,After you run this commands" &>> log_file
+    echo "Please take sudo access,After you run this commands" | tee -a log_file
     exit 1
 fi 
 
