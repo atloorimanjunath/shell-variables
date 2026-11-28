@@ -11,10 +11,11 @@ fi
 
 echo "Proceding.."
 
-dnf install nginx -yy
+dnf install nginx -yyy
 
 if [ $? -ne 0 ]; then
 echo "Nginx installation not successfull....."
+exit 2
 else
 echo "Nginx installation successfull..."
 fi
