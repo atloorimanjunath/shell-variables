@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "Script Starting time: $(date +"%Y-%m-%d %H:%M:%S")"
 userId=$(id -u)
 
 if [ $userId -eq 0 ]; then
@@ -23,3 +23,5 @@ validation $? "nginx installation"
 
 dnf install mysql -y
 validation $? "mysql installation"
+
+echo "Script Ending time: $(date +"%Y-%m-%d %H:%M:%S")"
