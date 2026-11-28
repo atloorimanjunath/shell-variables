@@ -3,21 +3,23 @@
 userId=$(id -u)
 
 if [ $userId -eq 0 ]; then
-echo "You are sudo user"
+    echo "You are sudo user"
 else
-echo "Please take sudo access,After you run this commands"
-exit 1
+    echo "Please take sudo access,After you run this commands"
+    exit 1
 fi 
 
-echo "Proceding.."
+validation(){
+    if [ ${1} -ne 0 ]; then
+        echo "${2} not successfull....."
+        exit 2
+    else
+        echo "${2} successfull..."
+    fi
+}
 
-dnf install nginx -yyy
+dnf install nginx -y
+validation $? "nginx installation"
 
-if [ $? -ne 0 ]; then
-echo "Nginx installation not successfull....."
-exit 2
-else
-echo "Nginx installation successfull..."
-fi
-
-echo "Proceding...."
+dnf install mysqlllll -y
+validation $? "mysql installation"
